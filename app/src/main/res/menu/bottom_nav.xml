@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/ic_home"
+        android:menuCategory="secondary"
+        app:cnb_iconColor="@color/colorBlack"
+        app:cnb_textColor="@color/colorTextBlack"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/bottom_quiz"
+        android:icon="@drawable/ic_quiz"
+        android:menuCategory="secondary"
+        app:cnb_iconColor="@color/colorBlack"
+        app:cnb_textColor="@color/colorTextBlack"
+        android:title="@string/quiz" />
+
+    <item
+        android:id="@+id/bottom_programs"
+        android:icon="@drawable/ic_code"
+        android:menuCategory="secondary"
+        app:cnb_iconColor="@color/colorBlack"
+        app:cnb_textColor="@color/colorTextBlack"
+        android:title="@string/programs" />
+
+
+</menu>

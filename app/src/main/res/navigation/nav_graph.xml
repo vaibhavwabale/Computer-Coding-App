@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="in.icomputercoding.computercoding.Fragments.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/about"
+        android:name="in.icomputercoding.computercoding.Fragments.QuizFragment"
+        android:label=" Quiz Fragment"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/bookmark"
+        android:name="in.icomputercoding.computercoding.Fragments.ProgramFragment"
+        android:label="Program Fragment"
+        tools:layout="@layout/fragment_program" />
+
+
+</navigation>

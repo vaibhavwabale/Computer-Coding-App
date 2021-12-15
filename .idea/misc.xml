@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/card.xml" value="0.2203125" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/card_background.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/corners.xml" value="0.2203125" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/edit_text.xml" value="1.5107142857142857" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/ic_about.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/ic_code.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/ic_quiz.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/ic_share.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/ic_telegram.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/loading.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/question_layout.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/rounded_borders.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/score_layout.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/share_corner.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/white_corners.xml" value="1.103125" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/font/poppins.xml" value="0.21875" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/about_us_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_code_category.xml" value="0.33" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_code_view.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cppquiz.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cppscreen.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cquiz.xml" value="0.2972972972972973" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cscreen.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_java_quiz.xml" value="0.25" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_java_screen.xml" value="0.2" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_score.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/code_category_layout.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/designer_screen.xml" value="0.33" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/fragment_program.xml" value="0.25" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/fragment_quiz.xml" value="0.33" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/home_screen.xml" value="0.22916666666666666" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/loading_dialog.xml" value="0.5" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/login_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/menu_header.xml" value="0.3069306930693069" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/no_internet.xml" value="0.25" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/pdf_viewer.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/register_screen.xml" value="0.2" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/reset_password_screen.xml" value="0.33" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/splash_screen.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/welcome_screen.xml" value="0.5" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/menu/bottom_nav.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/menu/main_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
