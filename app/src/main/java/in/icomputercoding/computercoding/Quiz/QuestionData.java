@@ -1,9 +1,9 @@
 package in.icomputercoding.computercoding.Quiz;
 
 public class QuestionData {
-    String oA,oB,oC,oD,ans,question;
+    String oA, oB, oC, oD, ans, question;
 
-    public QuestionData(){
+    public QuestionData() {
 
     }
 

@@ -4,15 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import in.icomputercoding.computercoding.LoginSignUpSystem.LoginScreen;
 import in.icomputercoding.computercoding.LoginSignUpSystem.RegisterScreen;
+import in.icomputercoding.computercoding.databinding.WelcomeScreenBinding;
 
 public class WelcomeScreen extends AppCompatActivity {
 
     private long pressedTime;
+    WelcomeScreenBinding binding;
 
     @Override
     public void onBackPressed() {
@@ -25,20 +27,17 @@ public class WelcomeScreen extends AppCompatActivity {
         pressedTime = System.currentTimeMillis();
     }
 
-    Button btn_login, btn_register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcome_screen);
+        binding = WelcomeScreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
-        btn_login = findViewById(R.id.btn_login);
-        btn_register = findViewById(R.id.btn_register);
+        binding.btnLogin.setOnClickListener(v -> startActivity(new Intent(WelcomeScreen.this, LoginScreen.class)));
 
-
-        btn_login.setOnClickListener(v -> startActivity(new Intent(WelcomeScreen.this, LoginScreen.class)));
-
-        btn_register.setOnClickListener(v -> startActivity(new Intent(WelcomeScreen.this, RegisterScreen.class)));
+        binding.btnRegister.setOnClickListener(v -> startActivity(new Intent(WelcomeScreen.this, RegisterScreen.class)));
 
     }
 }

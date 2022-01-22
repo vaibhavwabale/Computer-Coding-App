@@ -16,7 +16,6 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,34 +33,29 @@ import java.util.List;
 import java.util.Objects;
 
 import in.icomputercoding.computercoding.R;
+import in.icomputercoding.computercoding.databinding.ActivityCppquizBinding;
 
 public class CPPQuizActivity extends AppCompatActivity {
 
-    TextView questionTxt, indicator, timer;
+
     Boolean timerAgain = true;
-    LinearLayout container;
-    Button nextBtn, shareBtn;
     CountDownTimer countDownTimer;
     DatabaseReference reference;
     int score = 0;
     int position = 0;
     int count = 0;
-
+    ActivityCppquizBinding binding;
     List<QuestionData> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cppquiz);
+        binding = ActivityCppquizBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        questionTxt = findViewById(R.id.question);
-        indicator = findViewById(R.id.indicator);
-        container = findViewById(R.id.linearLayout2);
-        nextBtn = findViewById(R.id.next_btn);
-        shareBtn = findViewById(R.id.share_btn);
-        timer = findViewById(R.id.timer);
+
         if (this.timerAgain) {
-            reverseTimer(timer);
+            reverseTimer(binding.timer);
         }
         timerAgain = false;
         reference = FirebaseDatabase.getInstance().getReference();
@@ -89,15 +83,15 @@ public class CPPQuizActivity extends AppCompatActivity {
 
                 }
                 if (list.size() > 0) {
-                    loadQuestion(questionTxt, 0, list.get(position).getQuestion());
+                    loadQuestion(binding.question, 0, list.get(position).getQuestion());
 
                     for (int i = 0; i < 4; i++) {
-                        container.getChildAt(i).setOnClickListener(v -> checkAns((Button) v));
+                        binding.container.getChildAt(i).setOnClickListener(v -> checkAns((Button) v));
                     }
 
-                    nextBtn.setOnClickListener(v -> {
-                        nextBtn.setEnabled(false);
-                        nextBtn.setAlpha(0.7f);
+                    binding.nextBtn.setOnClickListener(v -> {
+                        binding.nextBtn.setEnabled(false);
+                        binding.nextBtn.setAlpha(0.7f);
                         enabled(true);
                         position++;
 
@@ -110,11 +104,11 @@ public class CPPQuizActivity extends AppCompatActivity {
                             return;
                         }
                         count = 0;
-                        loadQuestion(questionTxt, 0, list.get(position).getQuestion());
+                        loadQuestion(binding.question, 0, list.get(position).getQuestion());
 
                     });
 
-                    shareBtn.setOnClickListener(v -> {
+                    binding.shareBtn.setOnClickListener(v -> {
                         String body = "*" + list.get(position).getQuestion() + "*\n" +
                                 "(a) " + list.get(position).getoA() + "\n" +
                                 "(b) " + list.get(position).getoB() + "\n" +
@@ -171,29 +165,29 @@ public class CPPQuizActivity extends AppCompatActivity {
 
     private void checkAns(Button selectedOption) {
         enabled(false);
-        nextBtn.setEnabled(true);
-        nextBtn.setAlpha(1.0f);
+        binding.nextBtn.setEnabled(true);
+        binding.nextBtn.setAlpha(1.0f);
         if (selectedOption.getText().toString().equals(list.get(position).getAns())) {
             score++;
             selectedOption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#4caf50")));
             return;
         }
         selectedOption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ff0000")));
-        this.container.findViewWithTag(this.list.get(this.position).getAns()).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#4CAF50")));
+        this.binding.container.findViewWithTag(this.list.get(this.position).getAns()).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#4CAF50")));
     }
 
     private void enabled(Boolean enable) {
         for (int i = 0; i < 4; i++) {
-            container.getChildAt(i).setEnabled(enable);
+            binding.container.getChildAt(i).setEnabled(enable);
             if (enable) {
-                container.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00aeff")));
+                binding.container.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00aeff")));
             }
         }
     }
 
     private void loadQuestion(View view, int value, String data) {
         for (int i = 0; i < 4; i++) {
-            container.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00aeff")));
+            binding.container.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00aeff")));
         }
         view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500)
                 .setStartDelay(100).setInterpolator(new DecelerateInterpolator())
@@ -211,7 +205,7 @@ public class CPPQuizActivity extends AppCompatActivity {
                             else if (count == 3)
                                 option = list.get(position).getoD();
 
-                            loadQuestion(container.getChildAt(count), 0, option);
+                            loadQuestion(binding.container.getChildAt(count), 0, option);
                             count++;
                         }
                     }
@@ -223,7 +217,7 @@ public class CPPQuizActivity extends AppCompatActivity {
                         if (value == 0) {
                             try {
                                 ((TextView) view).setText(data);
-                                indicator.setText(position + "/" + list.size());
+                                binding.indicator.setText(position + "/" + list.size());
                             } catch (ClassCastException e) {
                                 ((Button) view).setText(data);
                             }
@@ -253,7 +247,7 @@ public class CPPQuizActivity extends AppCompatActivity {
         builder.setMessage("Do you want to Exit?");
         builder.setPositiveButton("Yes", (dialog, which) -> finish());
         builder.setNegativeButton("No", (dialog, which) -> dialog.cancel());
-        AlertDialog alert=builder.create();
+        AlertDialog alert = builder.create();
         alert.show();
     }
 

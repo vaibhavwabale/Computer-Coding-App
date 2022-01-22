@@ -4,21 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import in.icomputercoding.computercoding.R;
-import thereisnospon.codeview.CodeView;
+import in.icomputercoding.computercoding.databinding.ActivityCodeViewBinding;
 import thereisnospon.codeview.CodeViewTheme;
 
 public class CodeActivity extends AppCompatActivity {
 
-    CodeView codeView;
+    ActivityCodeViewBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_code_view);
+        binding = ActivityCodeViewBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        codeView = findViewById(R.id.code_view);
-        codeView.setTheme(CodeViewTheme.DEFAULT);
+        binding.codeView.setTheme(CodeViewTheme.DEFAULT);
         loadPrograms();
 
     }
@@ -86,6 +85,6 @@ public class CodeActivity extends AppCompatActivity {
         } else if ("Write a CPP Program to Add two numbers using function template.".equals(getIntent().getStringExtra("position"))) {
             code = Programs.CPP10;
         }
-        codeView.showCode(code);
+        binding.codeView.showCode(code);
     }
 }

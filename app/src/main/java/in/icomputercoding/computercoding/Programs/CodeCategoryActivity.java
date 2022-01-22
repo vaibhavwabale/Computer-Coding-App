@@ -8,40 +8,38 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import in.icomputercoding.computercoding.R;
+import in.icomputercoding.computercoding.databinding.ActivityCodeCategoryBinding;
 
 public class CodeCategoryActivity extends AppCompatActivity {
 
-    ListView programs;
     String[] list;
+    ActivityCodeCategoryBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_code_category);
-
+        binding = ActivityCodeCategoryBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         loadCategory();
 
-        programs = findViewById(R.id.ic_programs);
         CustomAdapter adapter = new CustomAdapter();
-        programs.setAdapter(adapter);
-        programs.setOnItemClickListener((parent, view, position, id) -> {
+        binding.icPrograms.setAdapter(adapter);
+        binding.icPrograms.setOnItemClickListener((parent, view, position, id) -> {
             Intent i = new Intent(CodeCategoryActivity.this, CodeActivity.class);
-            i.putExtra("position",list[position]);
+            i.putExtra("position", list[position]);
             startActivity(i);
         });
-
 
 
     }
 
     private void loadCategory() {
 
-        final String[] c_programs ={"Write a program to find length of string.",
+        final String[] c_programs = {"Write a program to find length of string.",
                 "Write a program to add two matrices using dynamic allocation method.",
                 "Write a program to find length of a string using arrays.",
                 "Write a program using arrays to check given string is palindrome or not.",
@@ -53,7 +51,7 @@ public class CodeCategoryActivity extends AppCompatActivity {
                 "Accept a character from the user and check whether the character is a vowel or consonant."};
 
 
-        final String[] cpp_programs ={"Write a  CPP program to check whether number is Even or Odd.",
+        final String[] cpp_programs = {"Write a  CPP program to check whether number is Even or Odd.",
                 "Write a CPP Program to Reverse an Integer.",
                 "Write a CPP Program to Find Fibonacci Series up to n number of terms.",
                 "Write a CPP Program to Check if a year is leap year or not.",
@@ -62,9 +60,9 @@ public class CodeCategoryActivity extends AppCompatActivity {
                 "Write a CPP Program to Swap two numbers using call by reference.",
                 "Write a CPP Program to calculate Volume of Cube using constructor.",
                 "Write a CPP Program to Maintain Book Records using File Handling.",
-                "Write a CPP Program to Add two numbers using function template." };
+                "Write a CPP Program to Add two numbers using function template."};
 
-        final String[] java_programs ={"Write a Java program to perform basic Calculator operations.",
+        final String[] java_programs = {"Write a Java program to perform basic Calculator operations.",
                 "Write a Java program to calculate a Factorial of a number.",
                 "Write a Java program to calculate Fibonacci Series up to n numbers.",
                 "Write a Java program to find out whether the given String is Palindrome or not.",
@@ -74,7 +72,6 @@ public class CodeCategoryActivity extends AppCompatActivity {
                 "Write a Java program to implement a Binary Search Algorithm.",
                 "Write a Java program to connect to a SQL DataBase.",
                 "Write a Java program to remove elements from an ArrayList."};
-
 
 
         String category = getIntent().getStringExtra("codeCategory");
@@ -112,7 +109,7 @@ public class CodeCategoryActivity extends AppCompatActivity {
         @SuppressLint({"ViewHolder", "InflateParams"})
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            convertView = getLayoutInflater().inflate(R.layout.code_category_layout,null);
+            convertView = getLayoutInflater().inflate(R.layout.code_category_layout, null);
             TextView textView = convertView.findViewById(R.id.program1);
             textView.setText(list[position]);
             return convertView;

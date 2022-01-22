@@ -6,30 +6,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
-import android.widget.TextView;
-
-import in.icomputercoding.computercoding.R;
+import in.icomputercoding.computercoding.databinding.ActivityScoreBinding;
 
 public class ScoreActivity extends AppCompatActivity {
 
-    TextView scoreTxt,TotalTxt;
     int score, total;
+    ActivityScoreBinding binding;
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_score);
+        binding = ActivityScoreBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         score = getIntent().getIntExtra("score",0);
         total = getIntent().getIntExtra("total",0);
 
-        scoreTxt = findViewById(R.id.score);
-        TotalTxt = findViewById(R.id.total);
-
-        scoreTxt.setText(String.valueOf(score));
-        TotalTxt.setText(String.valueOf(total));
+        binding.score.setText(String.valueOf(score));
+        binding.total.setText(String.valueOf(total));
 
     }
 }

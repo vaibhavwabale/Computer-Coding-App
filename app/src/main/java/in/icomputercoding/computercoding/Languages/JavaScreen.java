@@ -9,25 +9,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 import in.icomputercoding.computercoding.PdfViewer;
-import in.icomputercoding.computercoding.R;
+import in.icomputercoding.computercoding.databinding.ActivityJavaScreenBinding;
 
 public class JavaScreen extends AppCompatActivity {
 
-    ListView pdfList;
+    ActivityJavaScreenBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java_screen);
-
-        pdfList = findViewById(R.id.PdfList);
+        binding = ActivityJavaScreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
 
         String[] pdfFiles = {"Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,pdfFiles) {
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, pdfFiles) {
             @NonNull
             @Override
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -37,13 +35,13 @@ public class JavaScreen extends AppCompatActivity {
         };
 
 
-        pdfList.setAdapter(adapter);
+        binding.PdfList.setAdapter(adapter);
 
-        pdfList.setOnItemClickListener((parent, view, position, id) -> {
-            String item = pdfList.getItemAtPosition(position).toString();
+        binding.PdfList.setOnItemClickListener((parent, view, position, id) -> {
+            String item = binding.PdfList.getItemAtPosition(position).toString();
 
             Intent i = new Intent(JavaScreen.this, PdfViewer.class);
-            i.putExtra("JavaProgramming",item);
+            i.putExtra("JavaProgramming", item);
             startActivity(i);
         });
 

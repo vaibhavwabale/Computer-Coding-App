@@ -24,9 +24,9 @@
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/about_us_screen.xml" value="0.25" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_code_category.xml" value="0.33" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_code_view.xml" value="0.22" />
-        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cppquiz.xml" value="0.22" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cppquiz.xml" value="0.25" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cppscreen.xml" value="0.22" />
-        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cquiz.xml" value="0.2972972972972973" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cquiz.xml" value="0.2" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_cscreen.xml" value="0.22" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_java_quiz.xml" value="0.25" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/activity_java_screen.xml" value="0.2" />
@@ -46,7 +46,7 @@
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/register_screen.xml" value="0.2" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/reset_password_screen.xml" value="0.33" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/splash_screen.xml" value="0.22" />
-        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/welcome_screen.xml" value="0.5" />
+        <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/layout/welcome_screen.xml" value="0.22" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/menu/bottom_nav.xml" value="0.17604166666666668" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/menu/main_menu.xml" value="0.25" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />

@@ -16,15 +16,19 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import in.icomputercoding.computercoding.databinding.SplashScreenBinding;
+
 @SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
 
     FirebaseAuth auth;
+    SplashScreenBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_screen);
+        binding = SplashScreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         auth = FirebaseAuth.getInstance();
 

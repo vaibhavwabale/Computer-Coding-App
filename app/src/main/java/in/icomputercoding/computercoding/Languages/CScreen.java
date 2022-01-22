@@ -9,21 +9,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 import in.icomputercoding.computercoding.PdfViewer;
-import in.icomputercoding.computercoding.R;
+import in.icomputercoding.computercoding.databinding.ActivityCscreenBinding;
 
 public class CScreen extends AppCompatActivity {
 
-    ListView pdfList;
+    ActivityCscreenBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cscreen);
-
-        pdfList = findViewById(R.id.PdfList);
+        binding = ActivityCscreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
 
         String[] pdfFiles = {"Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"};
@@ -36,10 +34,10 @@ public class CScreen extends AppCompatActivity {
         };
 
 
-        pdfList.setAdapter(adapter);
+        binding.PdfList.setAdapter(adapter);
 
-        pdfList.setOnItemClickListener((parent, view, position, id) -> {
-            String item = pdfList.getItemAtPosition(position).toString();
+        binding.PdfList.setOnItemClickListener((parent, view, position, id) -> {
+            String item = binding.PdfList.getItemAtPosition(position).toString();
 
             Intent i = new Intent(CScreen.this, PdfViewer.class);
             i.putExtra("CProgramming", item);

@@ -8,14 +8,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Patterns;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -29,17 +23,15 @@ import java.util.Objects;
 
 import in.icomputercoding.computercoding.R;
 import in.icomputercoding.computercoding.WelcomeScreen;
+import in.icomputercoding.computercoding.databinding.RegisterScreenBinding;
 
 public class RegisterScreen extends AppCompatActivity {
 
-    EditText et_name, et_email, et_pass;
-    Button register;
-    TextView login;
     FirebaseAuth auth;
     DatabaseReference reference;
-    ImageView arrow_back;
     String name, email, pass;
     private long pressedTime;
+    RegisterScreenBinding binding;
 
     @Override
     public void onBackPressed() {
@@ -55,55 +47,58 @@ public class RegisterScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register_screen);
+        binding = RegisterScreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-        et_name = findViewById(R.id.et_name);
-        et_email = findViewById(R.id.et_email);
-        et_pass = findViewById(R.id.et_pass);
-        register = findViewById(R.id.register);
-        login = findViewById(R.id.login);
-        arrow_back = findViewById(R.id.arrow_back);
-
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.loading_dialog);
         dialog.setCanceledOnTouchOutside(false);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        arrow_back.setOnClickListener(view -> {
+        binding.arrowBack.setOnClickListener(view -> {
             startActivity(new Intent(RegisterScreen.this,WelcomeScreen.class));
             finish();
         });
 
-
-
-
-
-        login.setOnClickListener(view -> {
+        binding.login.setOnClickListener(view -> {
             startActivity(new Intent(RegisterScreen.this, LoginScreen.class));
             finish();
         });
 
-        register.setOnClickListener(new View.OnClickListener() {
+        binding.register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                name = et_name.getText().toString();
-                email = et_email.getText().toString();
-                pass = et_pass.getText().toString();
+                name = binding.etName.getText().toString();
+                email = binding.etEmail.getText().toString();
+                pass = binding.etPass.getText().toString();
                 validateUser();
 
             }
 
             private void validateUser() {
-                if (name.isEmpty() || email.isEmpty() || pass.isEmpty()) {
-
-                    Toast.makeText(RegisterScreen.this,"All fields are required", Toast.LENGTH_SHORT).show();
-                } else {
+                String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+                String checkPassword = "^" +
+                        //"(?=.*[0-9])" +         //at least 1 digit
+                        //"(?=.*[a-z])" +         //at least 1 lower case letter
+                        //"(?=.*[A-Z])" +         //at least 1 upper case letter
+                        "(?=.*[a-zA-Z])" +      //any letter
+                        //"(?=.*[@#$%^&+=])" +    //at least 1 special character
+                        "(?=S+$)" +           //no white spaces
+                        ".{4,}" +               //at least 4 characters
+                        "$";
+                if (email.isEmpty() || name.isEmpty() || pass.isEmpty()) {
+                    Toast.makeText(RegisterScreen.this,"All fields are required",Toast.LENGTH_SHORT).show();
+                } else if (!email.matches(emailPattern)) {
+                    Toast.makeText(RegisterScreen.this,"Enter a  valid email address",Toast.LENGTH_SHORT).show();
+                } else if (!pass.matches(checkPassword)) {
+                    Toast.makeText(RegisterScreen.this,"Password should contain 4 characters!",Toast.LENGTH_SHORT).show();
+                } else  {
                     registerUser();
                 }
 

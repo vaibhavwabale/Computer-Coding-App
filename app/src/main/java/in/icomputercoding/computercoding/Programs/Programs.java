@@ -6,7 +6,7 @@ public class Programs {
             "#include<stdio.h>\n" +
             "#define MAX_SIZE 100\n" +
             "int main()\n" +
-            "{\n"+
+            "{\n" +
             "\tchar text[MAX_SIZE];\n" +
             "\tchar * str = text;\n" +
             "\tint count = 0;\n" +
@@ -153,7 +153,7 @@ public class Programs {
             "return 0;\n" +
             "}\n";
 
-    public  static final String C7 = "" +
+    public static final String C7 = "" +
             "#include<stdio.h>\n" +
             "struct student\n" +
             "{\n" +
@@ -179,7 +179,7 @@ public class Programs {
             "return 0;\n" +
             "}\n";
 
-    public  static final String C8 = "" +
+    public static final String C8 = "" +
             "#include<stdio.h>\n" +
             "int main()\n" +
             "{\n" +
@@ -659,7 +659,7 @@ public class Programs {
             "return 0;\n" +
             "}\n";
 
-    public static  final String CPP6 = "" +
+    public static final String CPP6 = "" +
             "#include <iostream>\n" +
             "using namespace std;\n" +
             "void quick_sort(int[], int, int); \n" +
@@ -1027,24 +1027,24 @@ public class Programs {
             "template<class t1,class t2>\n" +
             "void sum(t1 a,t2 b) // defining template function\n" +
             "{\n" +
-            "cout<<'Sum : '<<a+b<<endl;\n"+
-            "}\n"+
-            "int main()\n"+
-            "{\n"+
-            "int a,b;\n"+
-            "float x,y;\n"+
-            "cout<<' Enter two integer data:';\n"+
-            "cin>>a>>b;\n"+
-            "cout<<' Enter two float data:';\n"+
-            "cin>>x>>y;\n"+
-            "sum(a,b); // adding two integer type data\n"+
-            "sum(x,y); // adding two float type data\n"+
-            "sum(a,x); // adding a float and integer type data\n"+
+            "cout<<'Sum : '<<a+b<<endl;\n" +
+            "}\n" +
+            "int main()\n" +
+            "{\n" +
+            "int a,b;\n" +
+            "float x,y;\n" +
+            "cout<<' Enter two integer data:';\n" +
+            "cin>>a>>b;\n" +
+            "cout<<' Enter two float data:';\n" +
+            "cin>>x>>y;\n" +
+            "sum(a,b); // adding two integer type data\n" +
+            "sum(x,y); // adding two float type data\n" +
+            "sum(a,x); // adding a float and integer type data\n" +
             "return 0;\n" +
             "}\n";
 
 
-    }
+}
 
 
 
