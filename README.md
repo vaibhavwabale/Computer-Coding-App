@@ -19,4 +19,4 @@ Computer Coding (Android App) - Learning Platform
 2. Processor : Core i5 & above
 3. Internet : Internet Connectivity for accessing app
 
-ComputerCoding[https://icomputercoding.in]
+ComputerCoding [https://icomputercoding.in]
