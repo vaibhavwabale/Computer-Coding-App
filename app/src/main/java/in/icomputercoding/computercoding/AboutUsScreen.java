@@ -1,12 +1,16 @@
 package in.icomputercoding.computercoding;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Objects;
 
 import in.icomputercoding.computercoding.databinding.AboutUsScreenBinding;
 
@@ -23,6 +27,16 @@ public class AboutUsScreen extends AppCompatActivity {
         setContentView(binding.getRoot());
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
+
+        PackageInfo pInfo = null;
+        try {
+            pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        String version = Objects.requireNonNull(pInfo).versionName;
+
+        binding.versionCode.setText(version);
 
         binding.telegram.setOnClickListener(v -> {
             Intent i = new Intent(Intent.ACTION_VIEW);

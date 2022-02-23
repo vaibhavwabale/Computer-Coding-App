@@ -19,7 +19,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
-import java.util.Objects;
 
 import in.icomputercoding.computercoding.R;
 import in.icomputercoding.computercoding.WelcomeScreen;
@@ -61,7 +60,7 @@ public class RegisterScreen extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         binding.arrowBack.setOnClickListener(view -> {
-            startActivity(new Intent(RegisterScreen.this,WelcomeScreen.class));
+            startActivity(new Intent(RegisterScreen.this, WelcomeScreen.class));
             finish();
         });
 
@@ -83,22 +82,13 @@ public class RegisterScreen extends AppCompatActivity {
 
             private void validateUser() {
                 String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
-                String checkPassword = "^" +
-                        //"(?=.*[0-9])" +         //at least 1 digit
-                        //"(?=.*[a-z])" +         //at least 1 lower case letter
-                        //"(?=.*[A-Z])" +         //at least 1 upper case letter
-                        "(?=.*[a-zA-Z])" +      //any letter
-                        //"(?=.*[@#$%^&+=])" +    //at least 1 special character
-                        "(?=S+$)" +           //no white spaces
-                        ".{4,}" +               //at least 4 characters
-                        "$";
                 if (email.isEmpty() || name.isEmpty() || pass.isEmpty()) {
-                    Toast.makeText(RegisterScreen.this,"All fields are required",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterScreen.this, "All fields are required", Toast.LENGTH_SHORT).show();
                 } else if (!email.matches(emailPattern)) {
-                    Toast.makeText(RegisterScreen.this,"Enter a  valid email address",Toast.LENGTH_SHORT).show();
-                } else if (!pass.matches(checkPassword)) {
-                    Toast.makeText(RegisterScreen.this,"Password should contain 4 characters!",Toast.LENGTH_SHORT).show();
-                } else  {
+                    Toast.makeText(RegisterScreen.this, "Enter a  valid email address", Toast.LENGTH_SHORT).show();
+                } else if (pass.length() < 6) {
+                    Toast.makeText(RegisterScreen.this, "Password should contain 6 characters!", Toast.LENGTH_SHORT).show();
+                } else {
                     registerUser();
                 }
 
@@ -124,15 +114,15 @@ public class RegisterScreen extends AppCompatActivity {
                                 i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(i);
                             } else {
-                                Toast.makeText(RegisterScreen.this, Objects.requireNonNull(task1.getException()).getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterScreen.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                             }
                         });
 
 
-                    } else  {
+                    } else {
 
                         dialog.hide();
-                        Toast.makeText(RegisterScreen.this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterScreen.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

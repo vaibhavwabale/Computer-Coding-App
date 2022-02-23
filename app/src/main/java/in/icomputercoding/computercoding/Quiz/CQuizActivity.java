@@ -251,5 +251,6 @@ public class CQuizActivity extends AppCompatActivity {
         builder.setNegativeButton("No", (dialog, which) -> dialog.cancel());
         AlertDialog alert=builder.create();
         alert.show();
+        countDownTimer.cancel();
     }
 }

@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CodeLab">
         <activity
+            android:name=".Languages.HTML5Screen"
+            android:exported="false" />
+        <activity
             android:name=".AboutUsScreen"
             android:exported="false" />
         <activity

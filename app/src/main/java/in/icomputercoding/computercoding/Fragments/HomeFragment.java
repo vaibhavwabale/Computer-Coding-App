@@ -24,6 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import in.icomputercoding.computercoding.Languages.CPPScreen;
 import in.icomputercoding.computercoding.Languages.CScreen;
+import in.icomputercoding.computercoding.Languages.HTML5Screen;
 import in.icomputercoding.computercoding.Languages.JavaScreen;
 import in.icomputercoding.computercoding.LoginSignUpSystem.UsersData;
 import in.icomputercoding.computercoding.R;
@@ -31,7 +32,7 @@ import in.icomputercoding.computercoding.R;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    RelativeLayout Learn_cpp, Learn_c, Learn_java;
+    RelativeLayout Learn_cpp, Learn_c, Learn_java, Learn_html5;
     TextView name;
     FirebaseUser user;
     FirebaseAuth auth;
@@ -50,6 +51,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         Learn_c.setOnClickListener(this);
         Learn_java = myView.findViewById(R.id.Learn_java);
         Learn_java.setOnClickListener(this);
+        Learn_html5 = myView.findViewById(R.id.Learn_html5);
+        Learn_html5.setOnClickListener(this);
+
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
@@ -84,6 +88,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             startActivity(i);
         } else if (v.getId() == R.id.Learn_java) {
             Intent i = new Intent(getActivity(), JavaScreen.class);
+            startActivity(i);
+        } else if (v.getId() == R.id.Learn_html5) {
+            Intent i = new Intent(getActivity(), HTML5Screen.class);
             startActivity(i);
         }
     }

@@ -13,8 +13,6 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.Objects;
-
 import in.icomputercoding.computercoding.HomeScreen;
 import in.icomputercoding.computercoding.R;
 import in.icomputercoding.computercoding.WelcomeScreen;
@@ -104,7 +102,7 @@ public class LoginScreen extends AppCompatActivity {
                         startActivity(i);
                         finish();
                     } else {
-                        Toast.makeText(LoginScreen.this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginScreen.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

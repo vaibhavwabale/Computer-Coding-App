@@ -218,6 +218,59 @@
 
                 </RelativeLayout>
 
+                <RelativeLayout
+                    android:id="@+id/html5_programs"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/white_corners"
+                    android:elevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/html5_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/html5"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@id/html5_logo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/html5_programs"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="@string/Programs_10"
+                            android:textColor="@color/hintTextColor"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
 
             </LinearLayout>
 

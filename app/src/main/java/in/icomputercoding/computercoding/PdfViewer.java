@@ -10,18 +10,20 @@ import in.icomputercoding.computercoding.databinding.PdfViewerBinding;
 
 public class PdfViewer extends AppCompatActivity {
 
-    String C, Java, CPP;
+    String C, Java, CPP, HTML5;
     PdfViewerBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = PdfViewerBinding.inflate(getLayoutInflater());
-        setContentView(binding.pdfView);
+        setContentView(binding.getRoot());
 
         C = getIntent().getStringExtra("CProgramming");
         Java = getIntent().getStringExtra("JavaProgramming");
         CPP = getIntent().getStringExtra("CPPProgramming");
+        HTML5 = getIntent().getStringExtra("HTML5Programming");
+
 
 
         if ("Chapter 1".equals(C)) {

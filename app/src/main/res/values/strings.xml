@@ -28,9 +28,11 @@
     <string name="close">Close</string>
     <string name="Programs_10">Total 10 Programs</string>
     <string name="Quiz_10">Total 10 Quiz</string>
+    <string name="Quiz_30">Total 30 Quiz</string>
     <string name="java_programs">Java Programs</string>
     <string name="cpp_programs">CPP Programs</string>
     <string name="c_programs">C Programs</string>
+    <string name="html5_programs">HTML5 Programs</string>
     <string name="learn_java">Learn Java</string>
     <string name="learn_cpp">Learn CPP</string>
     <string name="learn_c">Learn C</string>
@@ -52,6 +54,7 @@
     <string name="learn_cpp_programming">Learn CPP Programming</string>
     <string name="total_8_chapters">Total 8 Chapters</string>
     <string name="learn_java_programming">Learn Java Programming</string>
+    <string name="learn_html5_programming">Learn HTML5 Programming</string>
     <string name="chapters">Chapters</string>
     <string name="copy_right">Copyright © 2021 Computer Coding</string>
     <string name="privacy_policy">Privacy Policy</string>

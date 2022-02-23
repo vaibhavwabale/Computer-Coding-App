@@ -244,10 +244,11 @@ public class JavaQuizActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
         builder.setMessage("Do you want to Exit?");
-        builder.setPositiveButton("Yes", (dialog, which) -> finishAffinity());
+        builder.setPositiveButton("Yes", (dialog, which) -> finish());
         builder.setNegativeButton("No", (dialog, which) -> dialog.cancel());
         AlertDialog alert = builder.create();
         alert.show();
+        countDownTimer.cancel();
     }
 
 }
