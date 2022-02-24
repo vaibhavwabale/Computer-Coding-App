@@ -12,13 +12,14 @@ import android.widget.RelativeLayout;
 
 import in.icomputercoding.computercoding.Quiz.CPPQuizActivity;
 import in.icomputercoding.computercoding.Quiz.CQuizActivity;
+import in.icomputercoding.computercoding.Quiz.HTML5QuizActivity;
 import in.icomputercoding.computercoding.Quiz.JavaQuizActivity;
 import in.icomputercoding.computercoding.R;
 
 
 public class QuizFragment extends Fragment implements View.OnClickListener {
 
-    RelativeLayout c_language, java_language, cpp_language;
+    RelativeLayout c_language, java_language, cpp_language, html5_language;
 
 
     @Override
@@ -29,10 +30,12 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
         c_language = myView.findViewById(R.id.c_language);
         java_language = myView.findViewById(R.id.java_language);
         cpp_language = myView.findViewById(R.id.cpp_language);
+        html5_language = myView.findViewById(R.id.html5_language);
 
         c_language.setOnClickListener(this);
         cpp_language.setOnClickListener(this);
         java_language.setOnClickListener(this);
+        html5_language.setOnClickListener(this);
 
         return myView;
     }
@@ -49,6 +52,9 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
             startActivity(i);
         } else if (id == R.id.java_language) {
             Intent i = new Intent(getActivity(), JavaQuizActivity.class);
+            startActivity(i);
+        } else if (id == R.id.html5_language) {
+            Intent i = new Intent(getActivity(), HTML5QuizActivity.class);
             startActivity(i);
         }
 

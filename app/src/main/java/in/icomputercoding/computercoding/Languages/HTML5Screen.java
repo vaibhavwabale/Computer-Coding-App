@@ -11,8 +11,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
 import in.icomputercoding.computercoding.PdfViewer;
-import in.icomputercoding.computercoding.R;
-import in.icomputercoding.computercoding.databinding.ActivityCppscreenBinding;
 import in.icomputercoding.computercoding.databinding.ActivityHtml5ScreenBinding;
 
 public class HTML5Screen extends AppCompatActivity {
@@ -25,7 +23,7 @@ public class HTML5Screen extends AppCompatActivity {
         binding = ActivityHtml5ScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        String[] pdfFiles = {"Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"};
+        String[] pdfFiles = {"Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6","Chapter 7"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, pdfFiles) {
             @NonNull
             @Override

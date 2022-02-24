@@ -74,7 +74,22 @@ public class PdfViewer extends AppCompatActivity {
             binding.pdfView.fromAsset("Chapter6_Java.pdf").load();
         } else if ("Chapter 7".equals(Java)) {
             binding.pdfView.fromAsset("Chapter7_Java.pdf").load();
+        } else if ("Chapter 1".equals(HTML5)) {
+            binding.pdfView.fromAsset("Chapter1_HTML.pdf").load();
+        } else if ("Chapter 2".equals(HTML5)) {
+            binding.pdfView.fromAsset("Chapter2_HTML.pdf").load();
+        } else if ("Chapter 3".equals(HTML5)) {
+            binding.pdfView.fromAsset("Chapter3_HTML.pdf").load();
+        } else if ("Chapter 4".equals(HTML5)) {
+            binding.pdfView.fromAsset("Chapter4_HTML.pdf").load();
+        } else if ("Chapter 5".equals(HTML5)) {
+            binding.pdfView.fromAsset("Chapter5_HTML.pdf").load();
+        } else if ("Chapter 6".equals(HTML5)) {
+            binding.pdfView.fromAsset("Chapter6_HTML.pdf").load();
+        } else if ("Chapter 7".equals(HTML5)) {
+            binding.pdfView.fromAsset("Chapter7_HTML.pdf").load();
         }
+
 
 
     }

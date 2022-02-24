@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CodeLab">
         <activity
+            android:name=".Quiz.HTML5QuizActivity"
+            android:exported="false" />
+        <activity
             android:name=".Languages.HTML5Screen"
             android:exported="false" />
         <activity
