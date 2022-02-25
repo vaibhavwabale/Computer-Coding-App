@@ -15,7 +15,7 @@ import in.icomputercoding.computercoding.R;
 
 public class ProgramFragment extends Fragment implements View.OnClickListener {
 
-    RelativeLayout c_programs, cpp_programs, java_programs;
+    RelativeLayout c_programs, cpp_programs, java_programs, HTML5_programs;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,10 +26,12 @@ public class ProgramFragment extends Fragment implements View.OnClickListener {
         c_programs = myView.findViewById(R.id.c_programs);
         cpp_programs = myView.findViewById(R.id.cpp_programs);
         java_programs = myView.findViewById(R.id.java_programs);
+        HTML5_programs = myView.findViewById(R.id.HTML5_programs);
 
         c_programs.setOnClickListener(this);
         cpp_programs.setOnClickListener(this);
         java_programs.setOnClickListener(this);
+        HTML5_programs.setOnClickListener(this);
 
 
         return myView;
@@ -48,6 +50,9 @@ public class ProgramFragment extends Fragment implements View.OnClickListener {
             startActivity(i);
         } else if (id == R.id.java_programs) {
             i.putExtra("codeCategory", "java_programs");
+            startActivity(i);
+        } else if (id == R.id.HTML5_programs) {
+            i.putExtra("codeCategory","HTML5_programs");
             startActivity(i);
         }
     }

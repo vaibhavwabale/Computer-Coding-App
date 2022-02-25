@@ -2,6 +2,246 @@ package in.icomputercoding.computercoding.Programs;
 
 public class Programs {
 
+    public static final String HTML1 = "" +
+            "<!DOCTYPE html> \n" +
+            "<html>\n" +
+            "<head>\n" +
+            "<style>\n" +
+            "Body {\n" +
+            "\tbackground-color:yellow;\n" +
+            "}\n" +
+            "</style>\n" +
+            "</head>\n" +
+            "<body>\n" +
+            "\t<h1>My Home Page</h1>\n" +
+            "</body>\n" +
+            "</html>\n";
+
+    public static final String HTML2 = "" +
+            "<!DOCTYPE html> \n" +
+            "<html> \n" +
+            "<head> \n" +
+            "<title>Polynomial Equations</title> \n" +
+            "</head> \n" +
+            "<body bgcolor='black' > \n" +
+            "<font color='red' align='center'> \n" +
+            "<h1><u>Polynomial Equation</u></h1> \n" +
+            "</font> \n" +
+            "<font color='white' align='center'> \n" +
+            "<h1> \n" +
+            "a<sub><small>0</small></sub> \n" +
+            "+a<sub><small>1</small></sub>x \n" +
+            "+a<sub><small>2</small></sub>x<sup><small>2</small></sup> \n" +
+            "+a<sub><small>3</small></sub>x<sup><small>3</small></sup> \n" +
+            "</h1> \n" +
+            "</font> \n" +
+            "</body> \n" +
+            "</html> \n";
+
+    public static final String HTML3 = "" +
+            "<!DOCTYPE html> \n" +
+            "< html> \n" +
+            "<head> \n" +
+            "<title>India's President \n" +
+            "</title> \n" +
+            "</head> \n" +
+            "<body> \n" +
+            "<big><center>India's President</big><BR> \n" +
+            "<font size='5' FACE='arial' color='red'>Dr. Shanker Dayal(1990-1995)</font><BR> \n" +
+            "<font size='5' face='arial' color='blue'>Dr.k.Narayan(1995-2001)</font><BR> \n" +
+            "<font size='5' face='arial' color='yellow'>Dr.A.P.J.Abdul Kalam(2001-2005)</font><BR> \n" +
+            "<font size='5' face='arial' color='orange'>Dr. Sarwapalli RadhaKrishnan(2005-2010)</font><BR> \n" +
+            "<font size='5' face='arial' color='green'>Dr. Pratibha Patil(2010-2015)</font><BR> \n" +
+            "</center>\n" +
+            "</body> \n" +
+            "</html> \n";
+
+    public static final String HTML4 = "" +
+            "<!DOCTYPE html> \n" +
+            "<HTML> \n" +
+            "<HEAD> \n" +
+            "<TITLE><CENTER>My College</CENTER> \n" +
+            "</TITLE> \n" +
+            "</HEAD> \n" +
+            "<BODY BGCOLOR='ORANGE'> \n" +
+            "<FONT SIZE='7' FACE='ARIAL' COLOR='BLUE'><CENTER>Modern COLLEGE, \n" +
+            "<SMALL>PUNE<CENTER></SMALL></FONT><BR> \n" +
+            "<BODY BGCOLOR='RED'><CENTER> \n" +
+            "<font size='2' face='arial' color='blue'<B>Courses</B></font><BR> \n" +
+            "<font size='2' face='arial' color='red'<B>Mathematics</B></font><BR> \n" +
+            "<font size='2' face='arial' color='green'<I>Computer Science</I></font><BR> \n" +
+            "<font size='2' face='arial' color='brown'<U>Physics</U></font><BR> \n" +
+            "<BODY BGCOLOR='PINK'<CENTER> \n" +
+            "<font size='2' face='arial' color='yellow'<B>Botany</B></font><BR> \n" +
+            "<font size='2' face='arial' color='brown'<I>Electronics</I></font><BR> \n" +
+            "<font size='2' face='arial' color='grey'<U>Chemistry</U></font><BR> \n" +
+            "<BODY BGCOLOR='PINK'<CENTER> \n" +
+            "<MARQUEE BEHAVIOUR='SLIDE'> NAAC ACCREDITED AT 'A' GRADE COLLEGE</MARQUEE> \n" +
+            "<IMG SRC='a.jpg' WIDTH='400' HEIGHT='400' ALT='IMAGE CANNOT BE DISPLAYED'> \n" +
+            "</BODY> \n" +
+            "</HTML> \n";
+
+    public static final String HTML5 = "" +
+            "<!DOCTYPE html> \n" +
+            "<HTML> \n" +
+            "<HEAD> \n" +
+            "<TITLE><CENTER>My College</CENTER> \n" +
+            "</TITLE> \n" +
+            "</HEAD> \n" +
+            "<BODY BGCOLOR='ORANGE'> \n" +
+            "<FONT SIZE='7' FACE='ARIAL' COLOR='BLUE'><CENTER>Modern COLLEGE, \n" +
+            "<SMALL>PUNE<CENTER></SMALL></FONT><BR> \n" +
+            "<BODY BGCOLOR='RED'><CENTER> \n" +
+            "<font size='2' face='arial' color='blue'<B>Courses</B></font><BR> \n" +
+            "<font size='2' face='arial' color='red'<B>Mathematics</B></font><BR> \n" +
+            "<font size='2' face='arial' color='green'<I>Computer Science</I></font><BR> \n" +
+            "<font size='2' face='arial' color='brown'<U>Physics</U></font><BR> \n" +
+            "<BODY BGCOLOR='PINK'><CENTER> \n" +
+            "<font size='2' face='arial' color='yellow'<B>Botany</B></font><BR> \n" +
+            "<font size='2' face='arial' color='brown'<I>Electronics</I></font><BR> \n" +
+            "<font size='2' face='arial' color='grey'<U>Chemistry</U></font><BR> \n" +
+            "<BODY BGCOLOR='PINK'<CENTER> \n" +
+            "<MARQUEE BEHAVIOUR='SLIDE'> NAAC ACCREDITED AT 'A' GRADE COLLEGE</MARQUEE> \n" +
+            "<IMG SRC='a.jpg' WIDTH='400' HEIGHT='400' ALT='IMAGE CANNOT BE DISPLAYED'> \n" +
+            "</BODY> \n" +
+            "</HTML> \n";
+
+    public static final String HTML6 = "" +
+            "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<head> \n" +
+            "</head> \n" +
+            "<body> \n" +
+            "<table border=2 cellspacing=4 cellpadding=4 bordercolordsrk='red' bordercolorlight='blue' align='center'> \n" +
+            "<caption>List of books</caption> \n" +
+            "<tr>\n" +
+            "<th rowspan=2 align='center'>Item no</th> \n" +
+            "<th rowspan=2 align='center'>Item name</th> \n" +
+            "<th align='center' colspan=2>Price</th> \n" +
+            "</tr> \n" +
+            "<tr> \n" +
+            "<th align='center'>Rs.</th> \n" +
+            "<th align='center'>Paise</th> \n" +
+            "</tr> \n" +
+            "<tr> \n" +
+            "<td align= 'center'>1.</td> \n" +
+            "<td align= 'center'>Programming in c++</td> \n" +
+            "<td align= 'center'>500</td> \n" +
+            "<td align= 'center'>50</td> \n" +
+            "</tr> \n" +
+            "<td align= 'center'>2.</td> \n" +
+            "<td align= 'center'>Programming in Java</td> \n" +
+            "<td align= 'center'>345</td> \n" +
+            "<td align= 'center'>00</td> \n" +
+            "</tr> \n" +
+            "</table> \n" +
+            "</body> \n" +
+            "</html> \n";
+
+    public static final String HTML7 = "" +
+            "<!DOCTYPE html> \n" +
+            "<html> \n" +
+            "<head> \n" +
+            "</head> \n" +
+            "<body> \n" +
+            "<table cellpadding=6 style='border:1px solid black;border-collapse:collapse;'> \n" +
+            "<tr> \n" +
+            "<th colspan=3 align='right' style='border:1px solid black;border-collapse:collapse;'> Country </th> \n" +
+            "<th colspan=3 align='right' style='border:1px solid black;border-collapse:collapse;'> Population(in crores) </th> \n" +
+            "</tr> \n" +
+            "<tr> \n" +
+            "<td rowspan=4 colspan=4 align='center' style='border:1px solid black;border-collapse:collapse;'> INDIA </td> \n" +
+            "</tr> \n" +
+            "<tr> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 1998</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 85</td> \n" +
+            "</tr > \n" +
+            "<tr > \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 1999</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 90</td> \n" +
+            "</tr > \n" +
+            "<tr > \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 2000</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 100</td> \n" +
+            "</tr> \n" +
+            "<tr > \n" +
+            "<td  rowspan=4 colspan=4 align='center' style='border:1px solid black;border-collapse:collapse;'> USA </td> \n" +
+            "</tr> \n" +
+            "<tr> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 1998</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 30</td> \n" +
+            "</tr > \n" +
+            "<tr > \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 1999</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 35</td> \n" +
+            "</tr > \n" +
+            "<tr > \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 2000</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 40</td> \n" +
+            "</tr> \n" +
+            "<tr  > \n" +
+            "<td rowspan=4 colspan=4 align='center' style='border:1px solid black;border-collapse:collapse;'> UK </td> \n" +
+            "<tr > \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 1998</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 25</td> \n" +
+            "</tr > \n" +
+            "<tr > \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 1999</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 30</td> \n" +
+            "</tr > \n" +
+            "<tr > \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 2000</td> \n" +
+            "<td align='center' style='border:1px solid black;border-collapse:collapse;'> 35</td> \n" +
+            "</tr> \n" +
+            "</table> \n" +
+            "</body> \n" +
+            "</html> \n";
+
+    public static final String HTML8 = "" +
+            "<!DOCTYPE html> \n" +
+            "<html> \n" +
+            "<body> \n" +
+            "<h1>My Great Header</h1> \n" +
+            "<p>Some text for my great webpage.</p> \n" +
+            "<hr> \n" +
+            "<br> \n" +
+            "<br> \n" +
+            "<iframe src=“http://nytimes.com” style=“border: 5px solid blue;” \n" +
+            "height=“500” width=“700”></iframe> \n" +
+            "</body> \n" +
+            "</html> \n";
+
+    public static final String HTML9 = "" +
+            "<!DOCTYPE html> \n" +
+            "<html> \n" +
+            "<form action='//www.html.am/html-codes/forms/html-form-tag-action.cfm' target='result' method='get'> \n" +
+            "Name: \n" +
+            "<input type='text' name='name' value='' maxlength='90' style='width:100px;'> \n" +
+            "<br> \n" +
+            "Pick a color: \n" +
+            "<input type='radio' name='color' value='red'> Red \n" +
+            "<input type='radio' name='color' value='green'> Green \n" +
+            "<input type='radio' name='color' value='blue'> Blue \n" +
+            "<br> \n" +
+            "<input type='submit' value='Submit'> \n" +
+            "</form> \n" +
+            "<iframe name='result' style='height:100px;width:200px;'></iframe> \n" +
+            "</html> \n";
+
+    public static final String HTML10 = "" +
+            "<!DOCTYPE html> \n" +
+            "<html> \n" +
+            "<body BGCOLOR='#f1242e'><CENTER></body> \n" +
+            "<font SIZE='1'>1.Josh Pradhan </font><br> \n" +
+            "<font SIZE='2'>2.Swati Pradhan </font><br> \n" +
+            "<font SIZE='3'>3.MAHESH Pradhan </font><br> \n" +
+            "<font SIZE='4'>4.Ram Pradhan </font><br> \n" +
+            "<font SIZE='5'>5.Pooja Pradhan </font><br> \n" +
+            "</font> \n" +
+            "</html> \n";
+
+
+
     public static final String C1 = "" +
             "#include<stdio.h>\n" +
             "#define MAX_SIZE 100\n" +

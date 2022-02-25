@@ -84,6 +84,12 @@ public class CodeActivity extends AppCompatActivity {
             code = Programs.CPP9;
         } else if ("Write a CPP Program to Add two numbers using function template.".equals(getIntent().getStringExtra("position"))) {
             code = Programs.CPP10;
+        } else if ("Use CSS to set the background color of the document (body) to yellow.".equals(getIntent().getStringExtra("position"))) {
+            code = Programs.HTML1;
+        } else if ("Create an HTML5 page which will display names of your family member on separate lines in different sizes. State size of each line in its text.".equals(getIntent().getStringExtra("position"))) {
+            code = Programs.HTML10;
+        } else if ("Create an HTML5 page containing the polynomial expression as follows ao+a1x+a2x2+a3x3.".equals(getIntent().getStringExtra("position"))) {
+            code = Programs.HTML2;
         }
         binding.codeView.showCode(code);
     }

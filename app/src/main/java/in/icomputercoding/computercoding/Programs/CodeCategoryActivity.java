@@ -73,6 +73,12 @@ public class CodeCategoryActivity extends AppCompatActivity {
                 "Write a Java program to connect to a SQL DataBase.",
                 "Write a Java program to remove elements from an ArrayList."};
 
+        final String[] HTML5_programs = { "Use CSS to set the background color of the document (body) to yellow.",
+                "Create an HTML5 page which will display names of your family member on separate lines in different sizes. State size of each line in its text.",
+                "Create an HTML5 page containing the polynomial expression as follows ao+a1x+a2x2+a3x3."
+
+        };
+
 
         String category = getIntent().getStringExtra("codeCategory");
         switch (category) {
@@ -84,6 +90,9 @@ public class CodeCategoryActivity extends AppCompatActivity {
                 break;
             case "java_programs":
                 list = java_programs;
+                break;
+            case "HTML5_programs":
+                list = HTML5_programs;
                 break;
         }
 
