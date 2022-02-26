@@ -73,11 +73,25 @@ public class CodeCategoryActivity extends AppCompatActivity {
                 "Write a Java program to connect to a SQL DataBase.",
                 "Write a Java program to remove elements from an ArrayList."};
 
+
         final String[] HTML5_programs = { "Use CSS to set the background color of the document (body) to yellow.",
                 "Create an HTML5 page which will display names of your family member on separate lines in different sizes. State size of each line in its text.",
-                "Create an HTML5 page containing the polynomial expression as follows ao+a1x+a2x2+a3x3."
+                "Create an HTML5 page containing the polynomial expression as follows ao+a1x+a2x2+a3x3.",
+                "1. Create an HTML5 page with following specifications \n" +
+                "a. Title should be about MYCOLLEGE \n" +
+                "b. Put the windows Logo image in the background \n " +
+                "c. Place your College name at the to the page in large text followed by address in smaller size \n " +
+                "d. Add names of courses offered each in a different color,style and typeface \n " +
+                "e. Add scrolling text with a message of your choice " +
+                "f. Add college image at the bottom \n " +
+                "(HINT:Use appropriate header and footer for the page)",
+                "Write a HTML code,which generate the following output",
+                "Gives us following web page, with the New York Times embedded inside the blue frame:",
+                "Write the HTML5 code which generate the following output"
 
         };
+
+
 
 
         String category = getIntent().getStringExtra("codeCategory");

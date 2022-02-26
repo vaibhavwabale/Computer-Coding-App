@@ -58,53 +58,27 @@ public class Programs {
 
     public static final String HTML4 = "" +
             "<!DOCTYPE html> \n" +
-            "<HTML> \n" +
-            "<HEAD> \n" +
-            "<TITLE><CENTER>My College</CENTER> \n" +
-            "</TITLE> \n" +
-            "</HEAD> \n" +
-            "<BODY BGCOLOR='ORANGE'> \n" +
-            "<FONT SIZE='7' FACE='ARIAL' COLOR='BLUE'><CENTER>Modern COLLEGE, \n" +
-            "<SMALL>PUNE<CENTER></SMALL></FONT><BR> \n" +
-            "<BODY BGCOLOR='RED'><CENTER> \n" +
-            "<font size='2' face='arial' color='blue'<B>Courses</B></font><BR> \n" +
-            "<font size='2' face='arial' color='red'<B>Mathematics</B></font><BR> \n" +
-            "<font size='2' face='arial' color='green'<I>Computer Science</I></font><BR> \n" +
-            "<font size='2' face='arial' color='brown'<U>Physics</U></font><BR> \n" +
-            "<BODY BGCOLOR='PINK'<CENTER> \n" +
-            "<font size='2' face='arial' color='yellow'<B>Botany</B></font><BR> \n" +
-            "<font size='2' face='arial' color='brown'<I>Electronics</I></font><BR> \n" +
-            "<font size='2' face='arial' color='grey'<U>Chemistry</U></font><BR> \n" +
-            "<BODY BGCOLOR='PINK'<CENTER> \n" +
-            "<MARQUEE BEHAVIOUR='SLIDE'> NAAC ACCREDITED AT 'A' GRADE COLLEGE</MARQUEE> \n" +
-            "<IMG SRC='a.jpg' WIDTH='400' HEIGHT='400' ALT='IMAGE CANNOT BE DISPLAYED'> \n" +
-            "</BODY> \n" +
-            "</HTML> \n";
-
-    public static final String HTML5 = "" +
-            "<!DOCTYPE html> \n" +
-            "<HTML> \n" +
-            "<HEAD> \n" +
-            "<TITLE><CENTER>My College</CENTER> \n" +
-            "</TITLE> \n" +
-            "</HEAD> \n" +
-            "<BODY BGCOLOR='ORANGE'> \n" +
-            "<FONT SIZE='7' FACE='ARIAL' COLOR='BLUE'><CENTER>Modern COLLEGE, \n" +
-            "<SMALL>PUNE<CENTER></SMALL></FONT><BR> \n" +
-            "<BODY BGCOLOR='RED'><CENTER> \n" +
-            "<font size='2' face='arial' color='blue'<B>Courses</B></font><BR> \n" +
-            "<font size='2' face='arial' color='red'<B>Mathematics</B></font><BR> \n" +
-            "<font size='2' face='arial' color='green'<I>Computer Science</I></font><BR> \n" +
-            "<font size='2' face='arial' color='brown'<U>Physics</U></font><BR> \n" +
-            "<BODY BGCOLOR='PINK'><CENTER> \n" +
-            "<font size='2' face='arial' color='yellow'<B>Botany</B></font><BR> \n" +
-            "<font size='2' face='arial' color='brown'<I>Electronics</I></font><BR> \n" +
-            "<font size='2' face='arial' color='grey'<U>Chemistry</U></font><BR> \n" +
-            "<BODY BGCOLOR='PINK'<CENTER> \n" +
-            "<MARQUEE BEHAVIOUR='SLIDE'> NAAC ACCREDITED AT 'A' GRADE COLLEGE</MARQUEE> \n" +
-            "<IMG SRC='a.jpg' WIDTH='400' HEIGHT='400' ALT='IMAGE CANNOT BE DISPLAYED'> \n" +
-            "</BODY> \n" +
-            "</HTML> \n";
+            "<html> \n" +
+            "<head> \n" +
+            "\t<title> <center>My College</center> </title> \n" +
+            "</head> \n" +
+            "<body bgcolor='orange'> \n" +
+            "<font SIZE='7' face='arial' COLOR='blue'><center>Modern COLLEGE, \n" +
+            "<small>PUNE<center></small></font><br> \n" +
+            "<body bgcolor='red'><center> \n" +
+            "<font size='2' face='arial' color='blue'<B>Courses</B></font><br> \n" +
+            "<font size='2' face='arial' color='red'<B>Mathematics</B></font><br> \n" +
+            "<font size='2' face='arial' color='green'<I>Computer Science</I></font><br> \n" +
+            "<font size='2' face='arial' color='brown'<U>Physics</U></font><br> \n" +
+            "<body bgcolor='pink'<center> \n" +
+            "<font size='2' face='arial' color='yellow'<B>Botany</B></font><br> \n" +
+            "<font size='2' face='arial' color='brown'<I>Electronics</I></font><br> \n" +
+            "<font size='2' face='arial' color='grey'<U>Chemistry</U></font><br> \n" +
+            "<body bgcolor='PINK'<center> \n" +
+            "<marquee behaviour='slide'> NAAC ACCREDITED AT 'A' GRADE COLLEGE</marquee> \n" +
+            "<img src='a.jpg' WIDTH='400' HEIGHT='400' ALT='IMAGE CANNOT BE DISPLAYED'> \n" +
+            "</body> \n" +
+            "</html> \n";
 
     public static final String HTML6 = "" +
             "<!DOCTYPE html>\n" +
@@ -206,7 +180,7 @@ public class Programs {
             "<hr> \n" +
             "<br> \n" +
             "<br> \n" +
-            "<iframe src=“http://nytimes.com” style=“border: 5px solid blue;” \n" +
+            "<iframe src='https://nytimes.com' style='border: 5px solid blue;' \n" +
             "height=“500” width=“700”></iframe> \n" +
             "</body> \n" +
             "</html> \n";
@@ -231,12 +205,12 @@ public class Programs {
     public static final String HTML10 = "" +
             "<!DOCTYPE html> \n" +
             "<html> \n" +
-            "<body BGCOLOR='#f1242e'><CENTER></body> \n" +
-            "<font SIZE='1'>1.Josh Pradhan </font><br> \n" +
-            "<font SIZE='2'>2.Swati Pradhan </font><br> \n" +
-            "<font SIZE='3'>3.MAHESH Pradhan </font><br> \n" +
-            "<font SIZE='4'>4.Ram Pradhan </font><br> \n" +
-            "<font SIZE='5'>5.Pooja Pradhan </font><br> \n" +
+            "<body bgcolor='#f1242e'><center></body> \n" +
+            "<font size='1'>1.Josh Pradhan </font><br> \n" +
+            "<font size='2'>2.Swati Pradhan </font><br> \n" +
+            "<font size='3'>3.MAHESH Pradhan </font><br> \n" +
+            "<font size='4'>4.Ram Pradhan </font><br> \n" +
+            "<font size='5'>5.Pooja Pradhan </font><br> \n" +
             "</font> \n" +
             "</html> \n";
 

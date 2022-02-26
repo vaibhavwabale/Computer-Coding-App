@@ -24,7 +24,7 @@ public class CodeActivity extends AppCompatActivity {
 
     private void loadPrograms() {
         String code = null;
-        if ("Write a program to find length of string.".equals(getIntent().getStringExtra("position"))) {
+       if ("Write a program to find length of string.".equals(getIntent().getStringExtra("position"))) {
             code = Programs.C1;
         } else if ("Write a program to add two matrices using dynamic allocation method.".equals(getIntent().getStringExtra("position"))) {
             code = Programs.C2;
@@ -90,7 +90,23 @@ public class CodeActivity extends AppCompatActivity {
             code = Programs.HTML10;
         } else if ("Create an HTML5 page containing the polynomial expression as follows ao+a1x+a2x2+a3x3.".equals(getIntent().getStringExtra("position"))) {
             code = Programs.HTML2;
-        }
+        } else if (("1. Create an HTML5 page with following specifications \n" +
+               "a. Title should be about MYCOLLEGE \n" +
+               "b. Put the windows Logo image in the background \n " +
+               "c. Place your College name at the to the page in large text followed by address in smaller size \n " +
+               "d. Add names of courses offered each in a different color,style and typeface \n " +
+               "e. Add scrolling text with a message of your choice " +
+               "f. Add college image at the bottom \n " +
+               "(HINT:Use appropriate header and footer for the page)")
+        .equals(getIntent().getStringExtra("position"))) {
+           code = Programs.HTML4;
+       } else if ("Write a HTML code,which generate the following output".equals(getIntent().getStringExtra("position"))) {
+           code = Programs.HTML9;
+       } else if ("Gives us following web page, with the New York Times embedded inside the blue frame:".equals(getIntent().getStringExtra("position"))) {
+           code = Programs.HTML8;
+       } else if ("Write the HTML5 code which generate the following output".equals(getIntent().getStringExtra("position"))) {
+           code = Programs.HTML7;
+       }
         binding.codeView.showCode(code);
     }
 }
