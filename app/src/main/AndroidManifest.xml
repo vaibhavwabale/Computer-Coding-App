@@ -21,6 +21,7 @@
             android:exported="false" />
         <activity
             android:name=".PdfViewer"
+            android:theme="@style/Theme.ComputerCoding.ActionBar"
             android:exported="false" />
         <activity
             android:name=".Languages.CScreen"

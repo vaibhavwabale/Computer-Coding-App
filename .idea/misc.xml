@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Computer-Coding-App/app/src/main/res/drawable-hdpi/gre.xml" value="0.2275" />
+        <entry key="..\:/AndroidStudioProjects/Computer-Coding-App/app/src/main/res/layout/activity_cppscreen.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Computer-Coding-App/app/src/main/res/layout/activity_cscreen.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Computer-Coding-App/app/src/main/res/layout/activity_html5_screen.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Computer-Coding-App/app/src/main/res/layout/activity_java_screen.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Computer-Coding-App/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Computer-Coding-App/app/src/main/res/layout/layout_notes.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Computer-Coding-App/app/src/main/res/layout/pdf_viewer.xml" value="0.25" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/card.xml" value="0.2203125" />
         <entry key="..\:/Users/Raja/AndroidStudioProjects/CodeLab/app/src/main/res/drawable/card_background.xml" value="0.19635416666666666" />
