@@ -1,5 +1,16 @@
 <resources xmlns="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+
+    <style name="Theme.ComputerCoding.ActionBar" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="android:statusBarColor">@color/LinearBlue</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/ColorAccent</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
     <style name="Theme.ComputerCoding" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="android:statusBarColor">@color/LinearBlue</item>

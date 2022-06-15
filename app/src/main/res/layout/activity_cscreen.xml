@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/rel1"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#f8f7fc"
@@ -76,8 +77,8 @@
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
-                <ListView
-                    android:id="@+id/PdfList"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/notesList"
                     android:layout_width="match_parent"
                     android:layout_height="432dp"
                     android:padding="5dp"
