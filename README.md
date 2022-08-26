@@ -29,3 +29,7 @@
 ## Support
 
 For support, email vaibhavsonu0506@gmail.com
+
+## Feedback
+
+If you have any feedback, please reach out to us at vaibhavsonu0506@gmail.com
