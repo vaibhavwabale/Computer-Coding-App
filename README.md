@@ -12,17 +12,6 @@
 
 <img src="https://github.com/vaibhavwabale/vaibhavwabale.github.io/blob/main/images/1.png" width="80%" height="100%" />
 
-## Documentation
-### Software requirements:
-1. Operating System : Windows or Linux
-2. IDE : Android Studio
-3. Database : Firebase Console
-
-### Hardware Requirements:
-1. OS : Windows 10 or Linux
-2. Processor : Core i5 & above
-3. Internet : Internet Connectivity for accessing app
-
 ## Tech Stack
 
 **Frontend:** XML
