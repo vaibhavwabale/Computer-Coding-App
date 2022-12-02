@@ -18,7 +18,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginTop="10dp"
@@ -209,59 +209,6 @@
                         android:text="@string/_1_0_0"
                         android:textColor="@color/hintTextColor"
                         android:textSize="@dimen/_14sdp" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/website"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/white_corners"
-                android:elevation="3dp">
-
-                <ImageView
-                    android:id="@+id/web"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="12dp"
-                    android:src="@drawable/code"
-                    tools:ignore="ContentDescription" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_toEndOf="@id/web"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="@string/website"
-                        android:textColor="@color/colorTextBlack"
-                        android:textSize="@dimen/_22sdp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="@string/website_link"
-                        android:textColor="@color/hintTextColor"
-                        android:textSize="@dimen/_10sdp" />
 
                 </LinearLayout>
 

@@ -33,7 +33,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Objects;
 
 import in.icomputercoding.computercoding.Fragments.HomeFragment;
-import in.icomputercoding.computercoding.Fragments.ProgramFragment;
+import in.icomputercoding.computercoding.Fragments.PlacementFragment;
 import in.icomputercoding.computercoding.Fragments.QuizFragment;
 import in.icomputercoding.computercoding.LoginSignUpSystem.UsersData;
 import in.icomputercoding.computercoding.databinding.HomeScreenBinding;
@@ -118,9 +118,9 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             } else if (i == R.id.bottom_quiz) {
                 fragment = new QuizFragment();
                 binding.toolbar.setTitle("Quiz");
-            } else if (i == R.id.bottom_programs) {
-                fragment = new ProgramFragment();
-                binding.toolbar.setTitle("Programs");
+            } else if (i == R.id.bottom_placement) {
+                fragment = new PlacementFragment();
+                binding.toolbar.setTitle("Placement");
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.navHostFragment, Objects.requireNonNull(fragment)).commit();
         });
@@ -163,14 +163,6 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         } else if (id == R.id.nav_about) {
             Intent i = new Intent(HomeScreen.this, AboutUsScreen.class);
             startActivity(i);
-        } else if (id == R.id.nav_privacy) {
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("https://icomputercoding.in/privacy-policy/"));
-            startActivity(i);
-        } else if (id == R.id.nav_terms) {
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("https://icomputercoding.in/terms-and-conditions/"));
-            startActivity(i);
         } else if (id == R.id.nav_share) {
             try {
                 Intent i = new Intent(Intent.ACTION_SEND);
@@ -186,11 +178,11 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             startActivity(new Intent(HomeScreen.this, WelcomeScreen.class));
         } else if (id == R.id.nav_instagram) {
             Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("https://www.instagram.com/icomputercoding/"));
+            i.setData(Uri.parse("https://www.instagram.com/codewithwabale/"));
             startActivity(i);
         } else if (id == R.id.nav_telegram) {
             Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("https://t.me/icomputercoding"));
+            i.setData(Uri.parse("https://t.me/android_flutter_group"));
             startActivity(i);
         }
         if (fragment != null) {

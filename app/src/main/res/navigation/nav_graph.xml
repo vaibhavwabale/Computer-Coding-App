@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/bookmark"
-        android:name="in.icomputercoding.computercoding.Fragments.ProgramFragment"
+        android:name="in.icomputercoding.computercoding.Fragments.PlacementFragment"
         android:label="Program Fragment"
         tools:layout="@layout/fragment_program" />
 

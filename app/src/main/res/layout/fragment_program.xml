@@ -28,7 +28,7 @@
                     android:id="@+id/program_logo"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_code"
+                    android:src="@drawable/resume"
                     app:layout_constraintBottom_toTopOf="@id/textView"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
-                    android:text="@string/programs"
+                    android:text="Placement Preparation"
                     android:textColor="@color/colorTextBlack"
                     android:textSize="@dimen/_22sdp"
                     android:textStyle="bold"
@@ -60,9 +60,9 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/c_programs"
+                    android:id="@+id/subjects"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="150dp"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
@@ -71,11 +71,13 @@
 
                     <ImageView
                         android:id="@+id/c_logo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        android:src="@drawable/c"
+                        android:src="@drawable/education"
+                        android:padding="10dp"
+                        android:background="@drawable/corners"
                         tools:ignore="ContentDescription" />
 
                     <LinearLayout
@@ -94,7 +96,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:fontFamily="@font/poppins"
-                            android:text="@string/c_programs"
+                            android:text="Core Subjects"
                             android:textColor="@color/colorTextBlack"
                             android:textSize="@dimen/_15sdp"
                             android:textStyle="bold" />
@@ -104,7 +106,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:fontFamily="@font/poppins"
-                            android:text="@string/Programs_10"
+                            android:text="Database \nOperating System \nComputer Networking"
                             android:textColor="@color/hintTextColor"
                             android:textSize="@dimen/_14sdp" />
 
@@ -113,9 +115,9 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/cpp_programs"
+                    android:id="@+id/aptitude"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="150dp"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
@@ -123,12 +125,14 @@
                     android:elevation="5dp">
 
                     <ImageView
-                        android:id="@+id/cpp_logo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:id="@+id/aptitude_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        android:src="@drawable/cpp"
+                        android:src="@drawable/skills"
+                        android:padding="10dp"
+                        android:background="@drawable/corners"
                         tools:ignore="ContentDescription" />
 
                     <LinearLayout
@@ -139,7 +143,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
-                        android:layout_toEndOf="@id/cpp_logo"
+                        android:layout_toEndOf="@id/aptitude_logo"
                         android:orientation="vertical">
 
                         <TextView
@@ -147,7 +151,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:fontFamily="@font/poppins"
-                            android:text="@string/cpp_programs"
+                            android:text="Aptitude"
                             android:textColor="@color/colorTextBlack"
                             android:textSize="@dimen/_15sdp"
                             android:textStyle="bold" />
@@ -157,18 +161,19 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:fontFamily="@font/poppins"
-                            android:text="@string/Programs_10"
+                            android:text="Quantitative Aptitude \nLogical Reasoning \nVerbal Ability"
                             android:textColor="@color/hintTextColor"
                             android:textSize="@dimen/_14sdp" />
+
 
                     </LinearLayout>
 
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/java_programs"
+                    android:id="@+id/resources"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="150dp"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
@@ -176,12 +181,14 @@
                     android:elevation="5dp">
 
                     <ImageView
-                        android:id="@+id/java_logo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:id="@+id/resource_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        android:src="@drawable/java"
+                        android:src="@drawable/resources"
+                        android:padding="10dp"
+                        android:background="@drawable/corners"
                         tools:ignore="ContentDescription" />
 
                     <LinearLayout
@@ -192,7 +199,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
-                        android:layout_toEndOf="@id/java_logo"
+                        android:layout_toEndOf="@id/resource_logo"
                         android:orientation="vertical">
 
                         <TextView
@@ -200,7 +207,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:fontFamily="@font/poppins"
-                            android:text="@string/java_programs"
+                            android:text="Other Resources"
                             android:textColor="@color/colorTextBlack"
                             android:textSize="@dimen/_15sdp"
                             android:textStyle="bold" />
@@ -210,66 +217,15 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:fontFamily="@font/poppins"
-                            android:text="@string/Programs_10"
+                            android:text="Interview Prep \nRoadmaps \nCheatsheet"
                             android:textColor="@color/hintTextColor"
                             android:textSize="@dimen/_14sdp" />
+
 
                     </LinearLayout>
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/HTML5_programs"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/white_corners"
-                    android:elevation="5dp">
-
-                    <ImageView
-                        android:id="@+id/html5_logo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        android:src="@drawable/html5"
-                        tools:ignore="ContentDescription" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_toEndOf="@id/html5_logo"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="12dp"
-                            android:fontFamily="@font/poppins"
-                            android:text="@string/html5_programs"
-                            android:textColor="@color/colorTextBlack"
-                            android:textSize="@dimen/_15sdp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="12dp"
-                            android:fontFamily="@font/poppins"
-                            android:text="@string/Programs_10"
-                            android:textColor="@color/hintTextColor"
-                            android:textSize="@dimen/_14sdp" />
-
-                    </LinearLayout>
-
-                </RelativeLayout>
 
 
             </LinearLayout>

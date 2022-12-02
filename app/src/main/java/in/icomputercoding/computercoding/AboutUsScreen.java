@@ -40,7 +40,7 @@ public class AboutUsScreen extends AppCompatActivity {
 
         binding.telegram.setOnClickListener(v -> {
             Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("https://t.me/icomputercoding"));
+            i.setData(Uri.parse("https://t.me/android_flutter_group"));
             startActivity(i);
         });
 
@@ -54,13 +54,6 @@ public class AboutUsScreen extends AppCompatActivity {
             } catch (Exception e) {
                 Toast.makeText(getApplicationContext(), "Unable to share this app", Toast.LENGTH_SHORT).show();
             }
-        });
-
-
-        binding.website.setOnClickListener(v -> {
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("https://icomputercoding.in"));
-            startActivity(i);
         });
     }
 

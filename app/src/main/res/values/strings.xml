@@ -60,15 +60,13 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
     <string name="follow_us">Follow Us</string>
-    <string name="desc">The best learning platform app for Programming Language, they provide tools for student to keep improve programming skill.It provides many topics, skill levels and language for programming Languages.</string>
+    <string name="desc">The best learning platform app for Programming Language and Placement Preparation</string>
     <string name="vaibhav_wable">Vaibhav Wable \n Founder Of Computer Coding</string>
     <string name="designed">Designed and Developed By</string>
     <string name="eshali_wable">Eshali Wable \n Developer Of Codelab</string>
     <string name="shravan_lagad">Shravan Lagad \n Designer Of CodeLab</string>
     <string name="version">Version</string>
     <string name="_1_0_0">1.0.0</string>
-    <string name="website">Website</string>
     <string name="share_this_app">Share This App</string>
-    <string name="website_link">https://icomputercoding.in</string>
-    <string name="telegram_link">https://t.me/icomputercoding</string>
+    <string name="telegram_link">https://t.me/android_flutter_group</string>
 </resources>
